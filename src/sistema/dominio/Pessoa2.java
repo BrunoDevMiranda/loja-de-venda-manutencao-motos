@@ -1,8 +1,6 @@
 package sistema.dominio;
 
-import java.io.Serializable;
-
-public abstract class Pessoa {
+public abstract class Pessoa2 {
 
     private String nome;
     private String cpf;
@@ -12,23 +10,9 @@ public abstract class Pessoa {
 
 
 
-    public Pessoa(String nome, String cpf, String endereco, int idade) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.endereco = endereco;
-        this.idade = idade;
-    }
 
 
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", endereco='" + endereco + '\'' +
-                ", idade=" + idade +
-                '}';
-    }
+
 
 
     public Moto getMoto() {

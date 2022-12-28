@@ -1,15 +1,13 @@
 package sistema.dominio.cliente;
 
 import sistema.dominio.Pessoa;
+import sistema.dominio.Pessoa2;
 
-public class Cliente extends Pessoa {
+public class Cliente2 extends Pessoa2 {
 
     private String codigoCliente;
 
     private double valorPago;
-
-
-
 
 
     public void imprimiCliente(){
@@ -27,18 +25,6 @@ public class Cliente extends Pessoa {
         }
 
 
-
-
-
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "codigoCliente='" + codigoCliente + '\'' +
-                '}';
-    }
-
-
-
     public double getValorPago() {
         return valorPago;
     }
@@ -47,9 +33,7 @@ public class Cliente extends Pessoa {
         this.valorPago = valorPago;
     }
 
-    public Cliente(String nome, String cpf, String endereco, int idade, String af12) {
-        super(nome, cpf, endereco, idade);
-    }
+
 
     public String getCodigoCliente() {
         return codigoCliente;

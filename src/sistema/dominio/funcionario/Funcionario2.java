@@ -2,8 +2,9 @@ package sistema.dominio.funcionario;
 
 import sistema.dominio.Moto;
 import sistema.dominio.Pessoa;
+import sistema.dominio.Pessoa2;
 
-public abstract class Funcionario extends Pessoa {
+public abstract class Funcionario2 extends Pessoa2 {
 
 
     protected int matricula;
@@ -16,23 +17,21 @@ public abstract class Funcionario extends Pessoa {
     public Moto[] motos;
 
 
-    public Funcionario(String nome, String cpf, String endereco, int idade, int matricula, double salario) {
-        super(nome, cpf, endereco, idade);
-        this.matricula = matricula;
-        this.salario = salario;
-        this.comissao = comissao;
-    }
 
-    public Funcionario(String nome, String cpf, String endereco, int idade, Moto[] motos) {
-        super(nome, cpf, endereco, idade);
-        this.motos = motos;
-    }
 
     public double getComissao() {
 
         return comissao ;
     }
 
+
+    public Moto[] getMotos() {
+        return motos;
+    }
+
+    public void setMotos(Moto[] motos) {
+        this.motos = motos;
+    }
 
     public double getValorPago() {
         return valorPago;

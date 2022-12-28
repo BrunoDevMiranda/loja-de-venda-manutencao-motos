@@ -1,4 +1,4 @@
-package sistema.dominio;
+package sistema.dominio.loja;
 
 
 
